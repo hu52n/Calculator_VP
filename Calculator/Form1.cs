@@ -155,6 +155,12 @@ namespace Calculator
                     DisplaySecreen.ForeColor = Color.Red;
                     DisplaySecreen.Font = new Font(DisplaySecreen.Font.FontFamily, 20); // 20 is the font size
                     DisplaySecreen.Text = "Can not divid by zero";
+                    
+                }
+                else if (secondNum != 0)
+                {
+                    DisplaySecreen.ForeColor = Color.White;
+                    DisplaySecreen.Font = new Font(DisplaySecreen.Font.FontFamily, 30);
                 }
                 else
                 {
@@ -162,6 +168,7 @@ namespace Calculator
                     DisplaySecreen.Text = result.ToString();
                 }
             }
+            
             userInput = "";
 
 
